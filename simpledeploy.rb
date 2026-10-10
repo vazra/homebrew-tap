@@ -5,21 +5,21 @@
 class Simpledeploy < Formula
   desc "Lightweight deployment manager for Docker Compose apps"
   homepage "https://github.com/vazra/simpledeploy"
-  version "1.4.2"
+  version "1.4.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/vazra/simpledeploy/releases/download/v1.4.2/simpledeploy_1.4.2_darwin_amd64.tar.gz"
-      sha256 "cd2f3797cb5bd998386a79751f5655ec89b4428268d55ba4499e8d90d74b02eb"
+      url "https://github.com/vazra/simpledeploy/releases/download/v1.4.3/simpledeploy_1.4.3_darwin_amd64.tar.gz"
+      sha256 "7b59f70230274222470c6908a356f0cdcef3c5b4d6d2ff73a1a5f1f80b8a4546"
 
       define_method(:install) do
         bin.install "simpledeploy"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/vazra/simpledeploy/releases/download/v1.4.2/simpledeploy_1.4.2_darwin_arm64.tar.gz"
-      sha256 "880fa7defc2532cb820685f4b97eff1210ba3e4cc893709e7bdca49f29d0266a"
+      url "https://github.com/vazra/simpledeploy/releases/download/v1.4.3/simpledeploy_1.4.3_darwin_arm64.tar.gz"
+      sha256 "19fb79463d3002bb0b720326bdeeb2020f2735026ee78664ba528f84cd53dfe0"
 
       define_method(:install) do
         bin.install "simpledeploy"
@@ -29,15 +29,15 @@ class Simpledeploy < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vazra/simpledeploy/releases/download/v1.4.2/simpledeploy_1.4.2_linux_amd64.tar.gz"
-      sha256 "456c28e8ed3648f44109289d02bee4341beb53d9169a37b559f02f72d7289104"
+      url "https://github.com/vazra/simpledeploy/releases/download/v1.4.3/simpledeploy_1.4.3_linux_amd64.tar.gz"
+      sha256 "f48b8d262825ecc921a71ca2f36baadd93087ffab82b10a73cf41036ef7db5b6"
       define_method(:install) do
         bin.install "simpledeploy"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vazra/simpledeploy/releases/download/v1.4.2/simpledeploy_1.4.2_linux_arm64.tar.gz"
-      sha256 "5d4e5815c088e2e5acd3fc828b55df6fc6107a291e4968074fa4dcb8cc25cd88"
+      url "https://github.com/vazra/simpledeploy/releases/download/v1.4.3/simpledeploy_1.4.3_linux_arm64.tar.gz"
+      sha256 "ebf844ec53a0a749e7b8a17ae81e0ff798aabb14535ccbb3a3d3acd2b82e5088"
       define_method(:install) do
         bin.install "simpledeploy"
       end
